@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.GestionAcquisitionController">
+   <children>
+      <ScrollPane prefHeight="746.0" prefWidth="755.0" style="-fx-background-color: #02030A;">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="850.0" prefWidth="753.0" style="-fx-background-color: #02030A;">
+               <children>
+                  <TableView fx:id="acquisitionTableView" layoutX="42.0" layoutY="470.0" prefHeight="193.0" prefWidth="670.0" styleClass="tableview" stylesheets="@../css/style.css">
+                    <columns>
+                      <TableColumn fx:id="referenceColumn" minWidth="-Infinity" prefWidth="98.0000057220459" text="Réference" />
+                      <TableColumn fx:id="titreColumn" minWidth="-Infinity" prefWidth="129.3333282470703" text="Titre" />
+                        <TableColumn fx:id="auteurColumn" minWidth="-Infinity" prefWidth="127.33331298828125" text="Auteur" />
+                        <TableColumn fx:id="RayonColumn" minWidth="-Infinity" prefWidth="162.0" text="Rayon" />
+                        <TableColumn fx:id="DisponibleColumn" minWidth="-Infinity" prefWidth="148.0" text="Disponibilite" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="rechercheEdit" layoutX="281.0" layoutY="409.0" prefHeight="39.0" prefWidth="216.0" styleClass="textfield" stylesheets="@../css/style.css" />
+                  <Button fx:id="rechercheButton" layoutX="582.0" layoutY="406.0" mnemonicParsing="false" onAction="#onClickRecherche" prefHeight="34.0" prefWidth="130.0" styleClass="buttonsu" stylesheets="@../css/style.css" text="Recherche">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="rechercheAvecComboBox" layoutX="42.0" layoutY="409.0" prefHeight="39.0" prefWidth="189.0" promptText="Recherche par :" styleClass="dropdown" stylesheets="@../css/style.css" />
+                  <TextField fx:id="rayonEdit" layoutX="431.0" layoutY="222.0" prefHeight="39.0" prefWidth="216.0" styleClass="textfield" stylesheets="@../css/style.css" />
+                  <TextField fx:id="titreEdit" layoutX="431.0" layoutY="115.0" prefHeight="39.0" prefWidth="216.0" styleClass="textfield" stylesheets="@../css/style.css" />
+                  <TextField fx:id="auteurEdit" layoutX="88.0" layoutY="222.0" prefHeight="39.0" prefWidth="216.0" styleClass="textfield" stylesheets="@../css/style.css" />
+                  <TextField fx:id="refEdit" layoutX="87.0" layoutY="115.0" prefHeight="39.0" prefWidth="216.0" styleClass="textfield" stylesheets="@../css/style.css" />
+                  <Button fx:id="ajouteButton" layoutX="517.0" layoutY="311.0" mnemonicParsing="false" onAction="#onClickAjouteOuvrage" prefHeight="34.0" prefWidth="130.0" styleClass="buttonsu" stylesheets="@../css/style.css" text="Ajouter">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="559.0" layoutY="680.0" mnemonicParsing="false" onAction="#onClickAjouteExemplaire" prefHeight="34.0" prefWidth="153.0" styleClass="buttonsu" stylesheets="@../css/style.css" text="Ajouter exemplaire">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Separator layoutX="72.0" layoutY="367.0" prefHeight="5.0" prefWidth="610.0" />
+                  <Pane prefHeight="74.0" prefWidth="753.0" style="-fx-background-color: black; -fx-border-color: #B7C3D7; -fx-border-width: 0 0 1px 0;">
+                     <children>
+                        <Label layoutX="42.0" layoutY="20.0" text="Gestion d'acquisition de nouveau ouvrage" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="431.0" layoutY="107.0" prefHeight="17.0" prefWidth="47.0" text="Titre" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="214.0" prefHeight="17.0" prefWidth="47.0" text="Auteur" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="107.0" prefHeight="17.0" prefWidth="72.0" text="Reference" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="431.0" layoutY="214.0" prefHeight="17.0" prefWidth="47.0" text="Rayon" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="281.0" layoutY="401.0" prefHeight="17.0" prefWidth="72.0" text="Recherche" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="deleteButton" layoutX="395.0" layoutY="680.0" mnemonicParsing="false" onAction="#onClickSupprimerExemplaire" prefHeight="34.0" prefWidth="119.0" styleClass="buttonsu" stylesheets="@../css/style.css" text="Supprimer">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

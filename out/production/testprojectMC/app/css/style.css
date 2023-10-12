@@ -1,0 +1,135 @@
+.button2 {
+    -fx-background-color:   #05071F;
+    -fx-text-fill: #fff;
+}
+
+.button2:hover {
+    -fx-background-color: #2E4053;
+    -fx-text-fill: #fff;
+}
+
+.button2:pressed {
+    -fx-background-color: #2E4053;
+    -fx-text-fill: #fff;
+}
+.button2:selected {
+    -fx-background-color: #2E4053;
+    -fx-text-fill: #fff;
+    -fx-border-color: #FFF;
+    -fx-border-width: 0 0 0 3;
+}
+
+.logout{
+    -fx-background-color: #05071F;
+    -fx-text-fill: #fff;
+}
+
+.closeButton{
+    -fx-background-color:  #05071F;
+}
+
+.textfield{
+    -fx-background-color :  #02030A;
+    -fx-border-color :  #B7C3D7;
+    -fx-border-width :  0 0 2px 0;
+    -fx-text-fill :  #ffffff;
+}
+
+.buttonsu{
+    -fx-background-color: #02030A;
+    -fx-border-width: 2px;
+    -fx-border-color: #B7C3D7;
+    -fx-background-radius : 0;
+    -fx-text-fill :  #ffffff;
+}
+
+.dropdown{
+    -fx-background-color :  #02030A;
+    -fx-text-fill :  white;
+    -fx-prompt-text-fill: white;
+    -fx-border-color: #B7C3D7;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.dropdown .text{
+    -fx-fill: white;
+}
+
+.dropdown .list-cell {
+    -fx-background-color: #02030A;
+}
+
+.dropdown .list-cell:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: #2E4053;
+}
+
+.datepicker{
+    -fx-border-color: #B7C3D7;
+}
+
+.datepicker .text-field {
+    -fx-background-color: #02030A;
+    -fx-border-color :  #B7C3D7;
+    -fx-prompt-text-fill: white;
+}
+
+.datepicker .arrow-button {
+    -fx-background-color: #02030A;
+}
+
+.tableview{
+    -fx-background-color: #02030A;
+    -fx-border-color: #B7C3D7;
+    -fx-border-width: 0 1px 1px 1px;
+}
+
+.tableview .table-row-cell {
+    -fx-background-color: #02030A;
+    -fx-alignment: center;
+
+}
+
+.tableview .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.tableview .table-cell{
+    -fx-border-color: transparent;
+    -fx-text-fill: lightgray;
+    -fx-padding: 2 0 2 10px;
+}
+
+
+.tableview .table-row-cell:selected {
+    -fx-background-color: whitesmoke;
+    -fx-text-fill: black;
+}
+.tableview .table-row-cell:selected .table-cell {
+    -fx-text-fill: black;
+}
+
+.error-effet {
+    -fx-focus-color: #d35244;
+    -fx-border-width: 1px;
+    -fx-faint-focus-color: #d3524422;
+    -fx-highlight-fill: -fx-accent;
+    -fx-highlight-text-fill: white;
+    -fx-background-insets: -0.2, 1, -1.4, 3;
+    -fx-background-radius: 3, 2, 4, 0;
+}
+
+.radio-button .radio{
+    -fx-background-color: #02030A;
+    -fx-border-color: white;
+    -fx-border-radius: 15px;
+}
+
+.radio-button .dot {
+    -fx-background-radius: 15px;
+}
+
+.radio-button:selected .radio .dot {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+}

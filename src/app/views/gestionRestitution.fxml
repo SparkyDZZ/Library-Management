@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.GestionRestitutionController">
+   <children>
+
+      <Pane prefHeight="74.0" prefWidth="753.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="42.0" layoutY="20.0" text="Gestion des restitutions" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+       <TableView fx:id="restitutionTableView" layoutX="42.0" layoutY="163.0" prefHeight="355.0" prefWidth="670.0" styleClass="tableview" stylesheets="@../css/style.css">
+           <columns>
+               <TableColumn fx:id="codeColumn" prefWidth="100.0" text="Code" />
+               <TableColumn fx:id="abonneColumn" prefWidth="150.0" text="Abonné(e)" />
+               <TableColumn fx:id="titreColumn" prefWidth="150.0" text="Titre d'ouvrage" />
+               <TableColumn fx:id="dateEmpruntColumn" prefWidth="100.0" text="Date d'emprunt" />
+               <TableColumn fx:id="dateLimiteColumn" prefWidth="100.0" text="Date limite" />
+           </columns>
+       </TableView>
+       <TextField fx:id="rechercheEdit" layoutX="283.0" layoutY="100.0" prefHeight="39.0" prefWidth="246.0" styleClass="textfield" stylesheets="@../css/style.css" />
+       <Button fx:id="rechercheButton" layoutX="582.0" layoutY="97.0" mnemonicParsing="false" onAction="#onClickRecherche" prefHeight="45.0" prefWidth="130.0" styleClass="buttonsu" stylesheets="@../css/style.css" text="Recherche" />
+       <ComboBox fx:id="rechercheAvecComboBox" layoutX="42.0" layoutY="100.0" prefHeight="39.0" prefWidth="189.0" promptText="Rechercher par :" styleClass="dropdown" stylesheets="@../css/style.css" />
+      <Button fx:id="rendreButton" layoutX="584.0" layoutY="540.0" mnemonicParsing="false" onAction="#onClickRendreEmprunt" prefHeight="45.0" prefWidth="130.0" styleClass="buttonsu" stylesheets="@../css/style.css" text="Modifier" />
+      <Label layoutX="283.0" layoutY="83.0" text="Recherche" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
